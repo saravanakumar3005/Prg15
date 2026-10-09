@@ -1,11 +1,13 @@
+
 SET SERVEROUTPUT ON;
 
 DECLARE
-v_marks NUMBER := 75;
+    marks NUMBER := 75;
 BEGIN
-
--- TODO: Write your IF-ELSE statement here.
-
-
+    IF marks >= 40 THEN
+        DBMS_OUTPUT.PUT_LINE('PASS');
+    ELSE
+        DBMS_OUTPUT.PUT_LINE('FAIL');
+    END IF;
 END;
 /
